@@ -187,11 +187,11 @@ async def cb_handler(client: Bot, query: CallbackQuery):
 
         elif query.data == "about_data":
             await query.answer()
-            keyboard = InlineKeyboardMarkup([
+            keyboard = InlineKeyboardMarkup(
                 [InlineKeyboardButton("⚡ BACK", callback_data="help_data"),
                     InlineKeyboardButton("HOME 🏠", callback_data="start_data")],
                 [InlineKeyboardButton("⚙️ SOURCE CODE ⚙️", url="https://github.com/Iam-The-Master/Auto-Filter-Bot")]
-            ])
+            ] )
 
             await query.message.edit_text(
                 script.ABOUT_MSG,
