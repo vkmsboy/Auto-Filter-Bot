@@ -17,12 +17,12 @@ async def start(client, message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("HELP", callback_data="help_data"),
-                        InlineKeyboardButton("ABOUT", callback_data="about_data"),
+                        InlineKeyboardButton('🏷 Channel', url='https://telegram.dog/TrollJunction2/'),
+                        InlineKeyboardButton('Creator 🖥', url ='https://telegram.dog/MasterOfTG'),
                     ],
                     [
                         InlineKeyboardButton(
-                            "⭕️ JOIN OUR GROUP ⭕️", url="https://telegram.dog/TrollJunction")
+                            "♻️ JOIN OUR GROUP ♻️", url="https://telegram.dog/TrollJunction")
                     ]
                 ]
             ),
@@ -40,12 +40,13 @@ async def help(client, message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("BACK", callback_data="start_data"),
-                        InlineKeyboardButton("ABOUT", callback_data="about_data"),
+                        InlineKeyboardButton("⚡ BACK", callback_data="start_data"),
+                        InlineKeyboardButton("ABOUT 🚩", callback_data="about_data"),
                     ],
                     [
-                        InlineKeyboardButton(
-                            "⭕️ SUPPORT ⭕️", url="https://telegram.dog/Iam_The_Master")
+                        InlineKeyboardButton("🔻 FEEDBACKS & SUGGESTIONS 🔻", url="https://telegram.dog/MasterOfTG")
+                    ]
+       
                     ]
                 ]
             ),
@@ -63,12 +64,12 @@ async def about(client, message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("BACK", callback_data="help_data"),
-                        InlineKeyboardButton("START", callback_data="start_data"),
+                        InlineKeyboardButton("🚩 HELP", callback_data="help_data"),
+                        InlineKeyboardButton("HOME 🏠", callback_data="start_data"),
                     ],
                     [
                         InlineKeyboardButton(
-                            "SOURCE CODE", url="https://github.com/Iam-The-Master/Auto-Filter-Bot")
+                            "⚙️ SOURCE CODE ⚙️", url="https://github.com/Iam-The-Master/Auto-Filter-Bot")
                     ]
                 ]
             ),
