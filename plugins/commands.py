@@ -45,9 +45,8 @@ async def help(client, message):
                     ],
                     [
                         InlineKeyboardButton("🔻 FEEDBACKS & SUGGESTIONS 🔻", url="https://telegram.dog/MasterOfTG")
-                    ]
-       
-                    ]
+                   
+                ]     
                 ]
             ),
             reply_to_message_id=message.message_id
