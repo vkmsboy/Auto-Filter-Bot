@@ -171,7 +171,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
 
         elif query.data == "help_data":
             await query.answer()
-            keyboard = InlineKeyboardMarkup([
+            keyboard = InlineKeyboardMarkup(
                 [InlineKeyboardButton("⚡ BACK", callback_data="start_data"),
                     InlineKeyboardButton("ABOUT 🚩", callback_data="about_data")],
                 [InlineKeyboardButton]("🔻 FEEDBACKS & SUGGESTIONS 🔻", url="https://telegram.dog/MasterOfTG")]
