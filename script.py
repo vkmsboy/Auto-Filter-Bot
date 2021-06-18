@@ -1,37 +1,20 @@
 class script(object):
 
 
-    START_MSG = """ <b> Hey {}
+    START_MSG = """<b>Hey {} !</b>
 
-I am an Auto Filter Bot Created For @TrollJunction Group 🔥
+<b><i>I'm An Advanced Auto Filter bot Created For @TrollJunction Group 🔥
 
-Bot Maintained By : <i>@Iam_The_Master</i>
-
-For more click <i>help</i></b>"""
+Click /Help To Know More...! 🙊</b></i>"""
 
 
-    HELP_MSG = """<b>How to use the bot??</b>
-<i>    
-* Add user account to your channel !
-
-* Add bot to group with admin rights.
-
-* Once deployed and bot is started, send a message to channel (must do step)
-
-* Bot will work now :)
-
-No need add each filter again!
-Bot will automatically search for your file and give links to that!
-</i>
-
-<b> Created For @TrollJunction 😉 </b>"""
+    HELP_MSG = """<b><i>No One Gonna Help You 🙊
+Created For @TrollJunction 😉</b></i>"""
 
 
-    ABOUT_MSG = """⭕️<b> My Name : Auto Filter Bot</b>
+    ABOUT_MSG = """⭕️<b> My Name : @DianaPrincessBot</b>
     
-⭕️ <b>Creater :</b> @Iam_The_Master
-
-⭕️ <b>Dev : </>@TroJanzHEX
+⭕️ <b>Creater :</b> @MasterOdTG
 
 ⭕️ <b>Language : </b> <code>Python3</code>
 
