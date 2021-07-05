@@ -9,12 +9,13 @@ Click /Help To Know More...! 🙊</b></i>"""
 
 
     HELP_MSG = """<b><i>No One Gonna Help You 🙊
+
 Created For @TrollJunction 😉</b></i>"""
 
 
     ABOUT_MSG = """⭕️<b> My Name : @DianaPrincessBot</b>
     
-⭕️ <b>Creater :</b> @MasterOdTG
+⭕️ <b>Creater :</b> @MasterOfTG
 
 ⭕️ <b>Language : </b> <code>Python3</code>
 
