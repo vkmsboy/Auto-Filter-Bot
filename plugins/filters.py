@@ -157,9 +157,9 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         elif query.data == "start_data":
             await query.answer()
             keyboard = InlineKeyboardMarkup([
-                [InlineKeyboardButton('🏷 Channel', url='https://telegram.dog/TrollJunction2/'),
+                [InlineKeyboardButton('🏷 Channel', url='https://telegram.dog/Mj_Linkz/'),
                  InlineKeyboardButton('Creator 🖥', url ='https://telegram.dog/MasterOfTG')],
-                [InlineKeyboardButton("♻️ JOIN OUR GROUP ♻️", url="https://telegram.dog/TrollJunction")]
+                [InlineKeyboardButton("♻️ JOIN OUR GROUP ♻️", url="https://telegram.dog/MovieJunctionGroup")]
             ])
 
             await query.message.edit_text(
@@ -174,7 +174,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
             keyboard = InlineKeyboardMarkup([
                 [InlineKeyboardButton("⚡ BACK", callback_data="start_data"),
                     InlineKeyboardButton("ABOUT 🚩", callback_data="about_data")],
-                [InlineKeyboardButton("🔻 FEEDBACKS & SUGGESTIONS 🔻", url="https://telegram.dog/MasterOfTG")]
+                [InlineKeyboardButton("🔻 FEEDBACKS & SUGGESTIONS 🔻", url="https://telegram.dog/Mj_Chats")]
                   
             ])
 
