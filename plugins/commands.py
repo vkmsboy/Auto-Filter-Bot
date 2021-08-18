@@ -22,7 +22,7 @@ async def start(client, message):
                     ],
                     [
                         InlineKeyboardButton(
-                            "♻️ JOIN OUR GROUP ♻️", url="https://telegram.dog/MovieJunctionGroup")
+                            "♻️ JOIN OUR GROUP ♻️", url="https://telegram.dog/MovieJunction_Group")
                     ]
                 ]
             ),
