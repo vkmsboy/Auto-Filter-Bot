@@ -159,7 +159,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
             keyboard = InlineKeyboardMarkup([
                 [InlineKeyboardButton('🏷 Channel', url='https://telegram.dog/Mj_Linkz/'),
                  InlineKeyboardButton('Creator 🖥', url ='https://telegram.dog/MasterOfTG')],
-                [InlineKeyboardButton("♻️ JOIN OUR GROUP ♻️", url="https://telegram.dog/MovieJunctionGroup")]
+                [InlineKeyboardButton("♻️ JOIN OUR GROUP ♻️", url="https://telegram.dog/MovieJunction_Group")]
             ])
 
             await query.message.edit_text(
