@@ -36,7 +36,7 @@ async def filter(client: Bot, message: Message):
             msg_id = msg.message_id                     
             link = msg.link
             btn.append(
-                text=f"{file_name}", url=f"{link}"
+                text=f"{file_name}",url=f"{link}")
             )
 
         if not btn:
@@ -55,7 +55,7 @@ async def filter(client: Bot, message: Message):
                 [InlineKeyboardButton(text="📃 Pages 1/1",callback_data="pages")]
             )
             await message.reply_text(
-                f"<b> Here is the result for {message.text}</b> \n {buttons}"
+                f"<b> Here is the result for {message.text}</b> {buttons}"
             )
             return
 
@@ -70,7 +70,7 @@ async def filter(client: Bot, message: Message):
         )
 
         await message.reply_text(
-                f"<b> Here is the result for ' {message.text} '</b> \n {buttons}"
+                f"<b> Here is the result for {message.text}</b> {buttons}"
             )    
 
 
@@ -155,9 +155,9 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         elif query.data == "start_data":
             await query.answer()
             keyboard = InlineKeyboardMarkup([
-                [InlineKeyboardButton('🏷 Channel', url='https://telegram.dog/Mj_Linkz/'),
-                 InlineKeyboardButton('Creator 🖥', url ='https://telegram.dog/MasterOfTG')],
-                [InlineKeyboardButton("♻️ JOIN OUR GROUP ♻️", url="https://telegram.dog/MovieJunction_Group")]
+                [InlineKeyboardButton("HELP", callback_data="help_data"),
+                    InlineKeyboardButton("ABOUT", callback_data="about_data")],
+                [InlineKeyboardButton("⭕️ JOIN OUR CHANNEL ⭕️", url="https://t.me/TroJanzHEX")]
             ])
 
             await query.message.edit_text(
@@ -170,10 +170,9 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         elif query.data == "help_data":
             await query.answer()
             keyboard = InlineKeyboardMarkup([
-                [InlineKeyboardButton("⚡ BACK", callback_data="start_data"),
-                    InlineKeyboardButton("ABOUT 🚩", callback_data="about_data")],
-                [InlineKeyboardButton("🔻 FEEDBACKS & SUGGESTIONS 🔻", url="https://telegram.dog/Mj_Chats")]
-                  
+                [InlineKeyboardButton("BACK", callback_data="start_data"),
+                    InlineKeyboardButton("ABOUT", callback_data="about_data")],
+                [InlineKeyboardButton("⭕️ SUPPORT ⭕️", url="https://t.me/TroJanzSupport")]
             ])
 
             await query.message.edit_text(
@@ -186,9 +185,9 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         elif query.data == "about_data":
             await query.answer()
             keyboard = InlineKeyboardMarkup([
-                [InlineKeyboardButton("⚡ BACK", callback_data="help_data"),
-                    InlineKeyboardButton("HOME 🏠", callback_data="start_data")],
-                [InlineKeyboardButton("⚙️ SOURCE CODE ⚙️", url="https://github.com/Iam-The-Master/Auto-Filter-Bot")]
+                [InlineKeyboardButton("BACK", callback_data="help_data"),
+                    InlineKeyboardButton("START", callback_data="start_data")],
+                [InlineKeyboardButton("SOURCE CODE", url="https://github.com/TroJanzHEX/Auto-Filter-Bot")]
             ])
 
             await query.message.edit_text(
@@ -204,4 +203,4 @@ async def cb_handler(client: Bot, query: CallbackQuery):
 
 def split_list(l, n):
     for i in range(0, len(l), n):
-        yield l[i:i + n]  
+        yield l[i:i + n]
