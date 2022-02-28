@@ -36,7 +36,7 @@ async def filter(client: Bot, message: Message):
             msg_id = msg.message_id                     
             link = msg.link
             btn.append(
-                [InlineKeyboardButton(text="{file_name}", url="{link}")]
+                [InlineKeyboardButton(text=f"{file_name}",url=f"{link}")]
             )
 
         if not btn:
