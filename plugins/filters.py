@@ -36,7 +36,7 @@ async def filter(client: Bot, message: Message):
             msg_id = msg.message_id                     
             link = msg.link
             btn.append(
-                text = f"Your request Name {file_name} or link {link}"
+                [InlineKeyboardButton(text="{file_name}", url="{link}")]
             )
 
         if not btn:
@@ -55,7 +55,8 @@ async def filter(client: Bot, message: Message):
                 [InlineKeyboardButton(text="📃 Pages 1/1",callback_data="pages")]
             )
             await message.reply_text(
-                f"<b> Here is the result for {message.text}</b> {buttons}"
+                f"<b> Here is the result for {message.text}</b>",
+                reply_markup=InlineKeyboardMarkup(buttons)
             )
             return
 
@@ -70,7 +71,8 @@ async def filter(client: Bot, message: Message):
         )
 
         await message.reply_text(
-                f"<b> Here is the result for {message.text}</b> {buttons}"
+                f"<b> Here is the result for {message.text}</b>",
+                reply_markup=InlineKeyboardMarkup(buttons)
             )    
 
 
