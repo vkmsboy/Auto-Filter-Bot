@@ -31,12 +31,12 @@ async def filter(client: Bot, message: Message):
 
     if len(message.text) > 2:    
         btn = []
-        async for msg in client.USER.search_messages(MAINCHANNEL_ID,query=message.text,filter='document'):
-            file_name = msg.document.file_name
+        async for msg in client.USER.search_messages(MAINCHANNEL_ID,query=message.text,filter='empty'):
+            # file_name = msg.document.file_name
             msg_id = msg.message_id                     
             link = msg.link
             btn.append(
-                [InlineKeyboardButton(text=f"{file_name}",url=f"{link}")]
+               text=f"{file_name}" , url=f"{link}")
             )
 
         if not btn:
@@ -51,28 +51,28 @@ async def filter(client: Bot, message: Message):
             }
         else:
             buttons = btn
-            buttons.append(
+            """buttons.append(
                 [InlineKeyboardButton(text="📃 Pages 1/1",callback_data="pages")]
-            )
+            )"""
             await message.reply_text(
                 f"<b> Here is the result for {message.text}</b>",
-                reply_markup=InlineKeyboardMarkup(buttons)
+                \n buttons
             )
             return
 
         data = BUTTONS[keyword]
         buttons = data['buttons'][0].copy()
 
-        buttons.append(
+       """ buttons.append(
             [InlineKeyboardButton(text="NEXT ⏩",callback_data=f"next_0_{keyword}")]
         )    
         buttons.append(
             [InlineKeyboardButton(text=f"📃 Pages 1/{data['total']}",callback_data="pages")]
-        )
+        )"""
 
         await message.reply_text(
                 f"<b> Here is the result for ' {message.text} '</b>",
-                reply_markup=InlineKeyboardMarkup(buttons)
+                \n buttons 
             )    
 
 
