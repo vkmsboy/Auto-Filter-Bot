@@ -56,7 +56,7 @@ async def filter(client: Bot, message: Message):
             )"""
             await message.reply_text(
                 f"<b> Here is the result for {message.text}</b>",
-                \n text = buttons
+                \n f"{buttons}"
             )
             return
 
@@ -72,7 +72,7 @@ async def filter(client: Bot, message: Message):
 
         await message.reply_text(
                 f"<b> Here is the result for ' {message.text} '</b>",
-                \n text = buttons
+                \n f"{buttons}"
             )    
 
 
