@@ -51,9 +51,9 @@ async def filter(client: Bot, message: Message):
             }
         else:
             buttons = btn
-            """buttons.append(
+            buttons.append(
                 [InlineKeyboardButton(text="📃 Pages 1/1",callback_data="pages")]
-            )"""
+            )
             await message.reply_text(
                 f"<b> Here is the result for {message.text}</b> \n {buttons}"
             )
@@ -62,12 +62,12 @@ async def filter(client: Bot, message: Message):
         data = BUTTONS[keyword]
         buttons = data['buttons'][0].copy()
 
-       """ buttons.append(
+        buttons.append(
             [InlineKeyboardButton(text="NEXT ⏩",callback_data=f"next_0_{keyword}")]
         )    
         buttons.append(
             [InlineKeyboardButton(text=f"📃 Pages 1/{data['total']}",callback_data="pages")]
-        )"""
+        )
 
         await message.reply_text(
                 f"<b> Here is the result for ' {message.text} '</b> \n {buttons}"
