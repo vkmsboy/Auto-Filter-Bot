@@ -1,8 +1,10 @@
 from bot import Bot
 # from os import environ
-from config import Api_key
+
 import aiohttp
 from pyrogram import Client, filters
+
+API_KEY = "e3eddb3e7c5513eee187120fce788ddc4a1a643b"
 
 @Client.on_message(filters.command('api') & filters.private)
 async def start(Client, message):
@@ -25,7 +27,7 @@ async def link_handler(Client, message):
 
 async def get_shortlink(link):
     url = 'https://urlshortx.com/api'
-    params = {'api': Api_key, 'url': link}
+    params = {'api': API_KEY, 'url': link}
 
     async with aiohttp.ClientSession() as session:
         async with session.get(url, params=params, raise_for_status=True) as response:
