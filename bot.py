@@ -25,6 +25,7 @@ from user import User
 class Bot(Client):
     USER: User = None
     USER_ID: int = None
+    API_KEY = API_KEY
 
     def __init__(self):
         super().__init__(
@@ -35,7 +36,6 @@ class Bot(Client):
                 "root": "plugins"
             },
             workers=TG_BOT_WORKERS,
-            API_KEY,
             bot_token=TG_BOT_TOKEN
         )
         self.LOGGER = LOGGER
