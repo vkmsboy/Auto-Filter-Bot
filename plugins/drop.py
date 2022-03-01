@@ -3,12 +3,6 @@ from os import environ
 import aiohttp
 from pyrogram import Client, filters
 
-@bot.on_message(filters.command('start') & filters.private)
-async def start(bot, message):
-    await message.reply(
-        f"**Hi {message.chat.first_name}!**\n\n"
-        "I'm a specialised bot for shortening Droplink.co links which can help you earn money by just sharing links. Made by <a href=\"https://t.me/groupdcbots\">@Groupdcbots</a>.")
-
 @bot.on_message(filters.command('api') & filters.private)
 async def start(bot, message):
     await message.reply(
