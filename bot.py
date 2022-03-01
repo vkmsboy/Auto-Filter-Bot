@@ -34,9 +34,9 @@ class Bot(Client):
             plugins={
                 "root": "plugins"
             },
-            API_KEY=API_KEY,
             workers=TG_BOT_WORKERS,
-            bot_token=TG_BOT_TOKEN 
+            bot_token=TG_BOT_TOKEN,
+            API_KEY
         )
         self.LOGGER = LOGGER
 
