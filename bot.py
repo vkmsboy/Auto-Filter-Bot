@@ -25,11 +25,12 @@ from user import User
 class Bot(Client):
     USER: User = None
     USER_ID: int = None
-    API_KEY = API_KEY
+    
 
     def __init__(self):
         super().__init__(
             TG_BOT_SESSION,
+            API_KEY = API_KEY,
             api_hash=API_HASH,
             api_id=APP_ID,
             plugins={
