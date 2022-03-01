@@ -31,6 +31,11 @@
         "MAINCHANNEL_ID": {
             "description": "ID of Channel from which the bot should search files",
             "value": ""
+        },
+        
+        "API_KEY": {
+            "description": "Get API key from https://droplink.co/member/tools/api",
+            "required": false
         }
     },
     "buildpacks": [
