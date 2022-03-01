@@ -16,6 +16,9 @@ API_HASH = os.environ.get("API_HASH", "")
 # Generate a user session string 
 TG_USER_SESSION = os.environ.get("TG_USER_SESSION", "")
 
+# droplink api key
+API_KEY = environ.get('API_KEY', 'e3eddb3e7c5513eee187120fce788ddc4a1a643b')
+
 # ID of Channel from which the bot shoul search files
 MAINCHANNEL_ID = os.environ.get("MAINCHANNEL_ID", "")
 
