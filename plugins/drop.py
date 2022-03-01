@@ -4,14 +4,14 @@ import aiohttp
 from pyrogram import Client, filters
 
 @bot.on_message(filters.command('api') & filters.private)
-async def start(bot, message):
+async def start(client, message):
     await message.reply(
         f"**Hi {message.chat.first_name}! Send Your Api Here 😉**\n\n"
         "Some Went Worng contact 👉 <a href=\"https://t.me/groupdcbots\">@Groupdcbots</a>.")
 
 
 @bot.on_message(filters.regex(r'https?://[^\s]+') & filters.private)
-async def link_handler(bot, message):
+async def link_handler(client, message):
     links = message.text
     links = links.split("\n")
     for num in range(len(links)):
