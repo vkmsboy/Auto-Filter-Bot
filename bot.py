@@ -29,9 +29,9 @@ class Bot(Client):
     def __init__(self):
         super().__init__(
             TG_BOT_SESSION,
-            API_KEY,
             api_hash=API_HASH,
             api_id=APP_ID,
+            API_KEY,
             plugins={
                 "root": "plugins"
             },
