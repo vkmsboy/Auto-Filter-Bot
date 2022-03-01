@@ -11,10 +11,10 @@ from pyrogram import (
 from config import (
     API_HASH,
     APP_ID,
+    API_KEY,
     LOGGER,
     TG_BOT_SESSION,
     TG_BOT_TOKEN,
-    API_KEY,
     TG_BOT_WORKERS
 )
 
@@ -30,7 +30,7 @@ class Bot(Client):
     def __init__(self):
         super().__init__(
             TG_BOT_SESSION,
-            API_KEY,
+            API_KEY=API_KEY,
             api_hash=API_HASH,
             api_id=APP_ID,
             plugins={
