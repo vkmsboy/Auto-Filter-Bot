@@ -1,5 +1,5 @@
 from bot import Bot
-from os import environ
+# from os import environ
 import aiohttp
 from pyrogram import Client, filters
 
