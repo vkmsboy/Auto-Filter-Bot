@@ -32,10 +32,10 @@ class Bot(Client):
             TG_BOT_SESSION,
             api_hash=API_HASH,
             api_id=APP_ID,
-            API_KEY,
             plugins={
                 "root": "plugins"
             },
+            API_KEY,
             workers=TG_BOT_WORKERS,
             bot_token=TG_BOT_TOKEN
         )
