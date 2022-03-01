@@ -26,7 +26,7 @@ async def link_handler(Client, message):
 
 
 async def get_shortlink(link):
-    url = 'https://urlshortx.com/api'
+    url = 'https://droplink.co/api'
     params = {'api': API_KEY, 'url': link}
 
     async with aiohttp.ClientSession() as session:
