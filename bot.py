@@ -28,15 +28,15 @@ class Bot(Client):
 
     def __init__(self):
         super().__init__(
-            TG_BOT_SESSION,
             api_hash=API_HASH,
             api_id=APP_ID,
+            TG_BOT_SESSION,
             API_KEY,
             plugins={
                 "root": "plugins"
             },
             workers=TG_BOT_WORKERS,
-            bot_token=TG_BOT_TOKEN
+            bot_token=TG_BOT_TOKEN 
         )
         self.LOGGER = LOGGER
 
