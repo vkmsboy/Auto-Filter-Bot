@@ -31,7 +31,6 @@ class Bot(Client):
             api_hash=API_HASH,
             api_id=APP_ID,
             TG_BOT_SESSION,
-            API_KEY,
             plugins={
                 "root": "plugins"
             },
