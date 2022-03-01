@@ -3,19 +3,6 @@ from os import environ
 import aiohttp
 from pyrogram import Client, filters
 
-API_ID = environ.get('API_ID')
-API_HASH = environ.get('API_HASH')
-BOT_TOKEN = environ.get('BOT_TOKEN')
-API_KEY = environ.get('API_KEY', 'e3eddb3e7c5513eee187120fce788ddc4a1a643b')
-
-bot = Client('droplink bot',
-             api_id=API_ID,
-             api_hash=API_HASH,
-             bot_token=BOT_TOKEN,
-             workers=50,
-             sleep_threshold=10)
-
-
 @bot.on_message(filters.command('start') & filters.private)
 async def start(bot, message):
     await message.reply(
