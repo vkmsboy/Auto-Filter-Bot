@@ -11,7 +11,7 @@ from pyrogram import (
 from config import (
     API_HASH,
     APP_ID,
-    api_key,
+    Api_key,
     LOGGER,
     TG_BOT_SESSION,
     TG_BOT_TOKEN,
@@ -37,7 +37,7 @@ class Bot(Client):
             },
             workers=TG_BOT_WORKERS,
             bot_token=TG_BOT_TOKEN,
-            api_key=API_KEY
+            Api_key=API_KEY
         )
         self.LOGGER = LOGGER
 
